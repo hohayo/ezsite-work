@@ -15,6 +15,12 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
+            $table->integer('rold_id')->default(0);
+            $table->string('account');
+            $table->string('name');
+            $table->string('avatar', 255)->default('http://lorempixel.com/200/200/animals');
+            $table->strilg('mobile')->nullable();
+            $table->string('email')->nullable();
             $table->timestamps();
         });
     }
