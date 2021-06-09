@@ -19,7 +19,7 @@ class CreateMembersTable extends Migration
             $table->string('account');
             $table->string('name');
             $table->string('avatar', 255)->default('http://lorempixel.com/200/200/animals');
-            $table->strilg('mobile')->nullable();
+            $table->string('mobile')->nullable();
             $table->string('email')->nullable();
             $table->timestamps();
         });
